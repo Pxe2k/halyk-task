@@ -23,7 +23,7 @@ func New(uc UseCase) *Handler {
 
 	show := api.PathPrefix("/show").Subrouter()
 
-	show.HandleFunc("/researve-seats", h.researveSeats).Methods(http.MethodPost)
+	show.HandleFunc("/reserve-seats", h.researveSeats).Methods(http.MethodPost)
 
 	return &h
 }

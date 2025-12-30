@@ -15,6 +15,7 @@ func NewSeatRepo(db *sql.DB) *seatRepo {
 	return &seatRepo{db: db}
 }
 
+// с pg было бы удобней ;)
 func (r *seatRepo) CheckAndReserveTx(
 	ctx context.Context,
 	tx *sql.Tx,
